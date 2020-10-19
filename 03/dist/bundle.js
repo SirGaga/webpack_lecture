@@ -22,7 +22,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"name\": () => /* binding */ name,\n/* harmony export */   \"height\": () => /* binding */ height,\n/* harmony export */   \"age\": () => /* binding */ age\n/* harmony export */ });\nconst name = 'why';\r\nconst height = 1.88;\r\nconst age = 18;\n\n//# sourceURL=webpack:///./src/js/info.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"name\": () => /* binding */ name,\n/* harmony export */   \"height\": () => /* binding */ height,\n/* harmony export */   \"age\": () => /* binding */ age\n/* harmony export */ });\nvar name = 'why';\nvar height = 1.88;\nvar age = 18;\n\n//# sourceURL=webpack:///./src/js/info.js?");
 
 /***/ }),
 
@@ -35,7 +35,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
-eval("function sum(num1, num2){\r\n    return num1 + num2;\r\n}\r\n\r\nfunction mul(num1,num2){\r\n    return num1 * num2;\r\n}\r\n\r\nmodule.exports = {\r\n    sum,\r\n    mul\r\n}\n\n//# sourceURL=webpack:///./src/js/mathUtils.js?");
+eval("function sum(num1, num2) {\n  return num1 + num2;\n}\n\nfunction mul(num1, num2) {\n  return num1 * num2;\n}\n\nmodule.exports = {\n  sum: sum,\n  mul: mul\n};\n\n//# sourceURL=webpack:///./src/js/mathUtils.js?");
 
 /***/ }),
 
@@ -49,7 +49,7 @@ eval("function sum(num1, num2){\r\n    return num1 + num2;\r\n}\r\n\r\nfunction 
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_info__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/info */ \"./src/js/info.js\");\n/* harmony import */ var _css_special_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/special.less */ \"./src/css/special.less\");\n// 1.使用commonjs的模块化的规范\r\nconst {sum,mul} = __webpack_require__(/*! ./js/mathUtils */ \"./src/js/mathUtils.js\");\r\n\r\nconsole.log(sum(20,30));\r\nconsole.log(mul(20,50));\r\n// 2.使用ES6的模块化的规范\r\n\r\n\r\n__webpack_require__(/*! ./css/normal.css */ \"./src/css/normal.css\");\r\n\r\n\r\n\r\n\r\nconsole.log(_js_info__WEBPACK_IMPORTED_MODULE_1__.name);\r\nconsole.log(_js_info__WEBPACK_IMPORTED_MODULE_1__.height);\r\nconsole.log(_js_info__WEBPACK_IMPORTED_MODULE_1__.age);\r\n\r\ndocument.writeln(\"<h2>hello webpack</h2>\");\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_info__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/info */ \"./src/js/info.js\");\n/* harmony import */ var _css_special_less__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/special.less */ \"./src/css/special.less\");\n// 1.使用commonjs的模块化的规范\nvar _require = __webpack_require__(/*! ./js/mathUtils */ \"./src/js/mathUtils.js\"),\n    sum = _require.sum,\n    mul = _require.mul;\n\nconsole.log(sum(20, 30));\nconsole.log(mul(20, 50)); // 2.使用ES6的模块化的规范\n\n\n\n__webpack_require__(/*! ./css/normal.css */ \"./src/css/normal.css\");\n\n\nconsole.log(_js_info__WEBPACK_IMPORTED_MODULE_1__.name);\nconsole.log(_js_info__WEBPACK_IMPORTED_MODULE_1__.height);\nconsole.log(_js_info__WEBPACK_IMPORTED_MODULE_1__.age);\ndocument.writeln(\"<h2>hello webpack</h2>\");\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ }),
 
