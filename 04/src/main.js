@@ -17,11 +17,18 @@ console.log(age);
 
 document.writeln("<h2>hello webpack</h2>");
 
-const Vue = require('vue');
+// const Vue = require('vue');
+import Vue from 'vue';
 
+// const App =
+// import App from './vue/app';
+import App from './vue/App.vue';
 const app = new Vue({
   el: '#app',
-  data: {
-    message: 'Hello Webpack'
+  template:'<App/>',
+  components: {
+    App
   }
 })
+
+document.writeln("<h2>hello 新代码</h2>");
